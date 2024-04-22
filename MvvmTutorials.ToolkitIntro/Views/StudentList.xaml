@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="MvvmTutorials.ToolkitIntro.Views.StudentList"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MvvmTutorials.ToolkitIntro.Views"
+             xmlns:vm="clr-namespace:MvvmTutorials.ToolkitIntro.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="250"
+             d:Background="#fff">
+    <UserControl.DataContext>
+        <vm:StudentListVM IsActive="True" />
+    </UserControl.DataContext>
+    <StackPanel>
+        <ToggleButton HorizontalAlignment="Left"
+                      DockPanel.Dock="Top"
+                      Height="20"
+                      IsChecked="{Binding AllowAddNew}"
+                      Content="Allow Adding" />
+        <Label Content="Student Count" />
+        <TextBox Height="20"
+                 IsReadOnly="True"
+                 DockPanel.Dock="Top"
+                 Text="{Binding StudentCount, Mode=OneWay}" />
+        <Label Content="Student List" />
+        <ListBox Grid.Row="2"
+                 Height="200"
+                 d:ItemsSource="{x:Null}"
+                 ItemsSource="{Binding Students}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0}, {1}, {2}">
+                                <Binding Path="Name" />
+                                <Binding Path="Class" />
+                                <Binding Path="Phone" />
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </StackPanel>
+</UserControl>
