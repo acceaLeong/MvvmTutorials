@@ -14,8 +14,8 @@
         <!--<ComboBox x:Name="LanguageList" SelectedIndex="0" Margin="10" SelectionChanged="LanguageList_SelectionChanged" />-->
         <ComboBox ItemsSource="{Binding Langs}" SelectedItem="{Binding LangItem}" Margin="10" />
 
-        <TextBlock FontSize="20" Margin="10" Text="{Binding [String1],Source={x:Static vm:LanguageManager.Instance}}" />
-        <TextBox FontSize="20" Margin="10" Text="{Binding [String2],Source={x:Static vm:LanguageManager.Instance},Mode=OneWay}" />
-        <Button FontSize="20" Margin="10" Content="{Binding [String3],Source={x:Static vm:LanguageManager.Instance}}" />
+        <TextBlock FontSize="20" Margin="10" Text="{Binding [String1],Source={x:Static vm:LanguageManager.Instance1}}" />
+        <TextBox FontSize="20" Margin="10" Text="{Binding [String2],Source={x:Static vm:LanguageManager.Instance1},Mode=OneWay}" />
+        <Button FontSize="20" Margin="10" Content="{Binding [String3],Source={x:Static vm:LanguageManager.Instance1}}" />
     </StackPanel>
 </Window>

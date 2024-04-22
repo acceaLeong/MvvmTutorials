@@ -31,8 +31,6 @@ public partial class LanguageManager : ObservableObject
         CultureInfo cultureInfo = new CultureInfo(value);
         CultureInfo.CurrentCulture = cultureInfo;
         CultureInfo.CurrentUICulture = cultureInfo;
-
-
     }
 
 
@@ -42,7 +40,8 @@ public partial class LanguageManager : ObservableObject
 
     private static readonly Lazy<LanguageManager> _lazy = new Lazy<LanguageManager>(() => new LanguageManager());
 
-    public static LanguageManager Instance => _lazy.Value;
+    //[ObservableProperty]
+    public static LanguageManager Instance1 => _lazy.Value;
 
     //public event PropertyChangedEventHandler? PropertyChanged;
 

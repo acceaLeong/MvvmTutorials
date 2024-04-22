@@ -33,6 +33,6 @@ public partial class MainWindow1 : Window
 
     //private void LanguageList_SelectionChanged(object sender, SelectionChangedEventArgs e)
     //{
-    //    LanguageManager.Instance.ChangeLanguage(new CultureInfo((sender as ComboBox).SelectedItem.ToString()));
+    //    LanguageManager.Instance1.ChangeLanguage(new CultureInfo((sender as ComboBox).SelectedItem.ToString()));
     //}
 }
