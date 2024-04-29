@@ -21,11 +21,11 @@
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="200">
             <!-- Without UpdateSourceTrigger=PropertyChanged -->
             <TextBox Style="{StaticResource StyleTB}" Text="{Binding Text}" />
-            <TextBox Style="{StaticResource StyleTB}" Text="{Binding Caption,Mode=OneWay}" IsReadOnly="True" />
+            <TextBox Style="{StaticResource StyleTB}" Text="{Binding Caption, Mode=OneWay}" IsReadOnly="True" />
             <Separator Margin="0,0,0,5" Background="Tomato" />
             <!-- With UpdateSourceTrigger=PropertyChanged -->
             <TextBox Style="{StaticResource StyleTB}" Text="{Binding Text1, UpdateSourceTrigger=PropertyChanged}" />
-            <TextBox Style="{StaticResource StyleTB}" Text="{Binding Caption1,Mode=OneWay}" IsReadOnly="True" />
+            <TextBox Style="{StaticResource StyleTB}" Text="{Binding Caption1, Mode=OneWay}" IsReadOnly="True" />
         </StackPanel>
     </Grid>
 </Window>

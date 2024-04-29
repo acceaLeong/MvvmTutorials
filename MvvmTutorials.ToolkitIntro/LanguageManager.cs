@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,11 +10,10 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using static System.Net.Mime.MediaTypeNames;
+using System.Xml.Linq;
 
 namespace MvvmTutorials.ToolkitIntro;
 
-//public partial class LanguageManager : INotifyPropertyChanged
 public partial class LanguageManager : ObservableObject
 {
     [ObservableProperty]
@@ -21,6 +21,7 @@ public partial class LanguageManager : ObservableObject
     {
         "en-US",
         "ja",
+        "zh-CN",
     };
 
     [ObservableProperty]
@@ -31,23 +32,21 @@ public partial class LanguageManager : ObservableObject
         CultureInfo cultureInfo = new CultureInfo(value);
         CultureInfo.CurrentCulture = cultureInfo;
         CultureInfo.CurrentUICulture = cultureInfo;
+
+        InstanceF.OnPropertyChanged("item[]");
     }
 
+    private static readonly Lazy<LanguageManager> _lazyZ = new Lazy<LanguageManager>(() => new LanguageManager());
+    //private static readonly LanguageManager _lazyZ = new LanguageManager();
 
+    public static LanguageManager InstanceF => _lazyZ.Value;
+    //public static LanguageManager InstanceF => _lazyZ;
 
-
-    private readonly ResourceManager _resourceManager;
-
-    private static readonly Lazy<LanguageManager> _lazy = new Lazy<LanguageManager>(() => new LanguageManager());
-
-    //[ObservableProperty]
-    public static LanguageManager Instance1 => _lazy.Value;
-
-    //public event PropertyChangedEventHandler? PropertyChanged;
+    private readonly ResourceManager _resourceManagerS;
 
     public LanguageManager()
     {
-        _resourceManager = new ResourceManager("MvvmTutorials.ToolkitIntro.Resources.Lang1", typeof(LanguageManager).Assembly);
+        _resourceManagerS = new ResourceManager("MvvmTutorials.ToolkitIntro.Resources.Lang1", typeof(LanguageManager).Assembly);
     }
 
     public string this[string name]
@@ -59,15 +58,10 @@ public partial class LanguageManager : ObservableObject
                 throw new ArgumentNullException(nameof(name));
             }
 
-            return _resourceManager.GetString(name);
+            return _resourceManagerS.GetString(name);
         }
     }
 
-    //public void ChangeLanguage(CultureInfo cultureInfo)
-    //{
-    //    CultureInfo.CurrentCulture = cultureInfo;
-    //    CultureInfo.CurrentUICulture = cultureInfo;
-
-    //    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("item[]"));
-    //}
+    [ObservableProperty]
+    private string _textY = "Testing 123";
 }

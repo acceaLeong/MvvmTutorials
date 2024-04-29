@@ -11,11 +11,7 @@
     <UserControl.DataContext>
         <vm:StudentFormVM IsActive="True" />
     </UserControl.DataContext>
-    <Border Padding="10"
-            BorderThickness="1"
-            BorderBrush="LightGray"
-            CornerRadius="5">
-
+    <Border Padding="10" BorderThickness="1" BorderBrush="LightGray" CornerRadius="5">
         <StackPanel>
             <TextBlock Text="Student Form" FontSize="18" />
             <Label Content="Name" />
@@ -27,6 +23,5 @@
             <Separator />
             <Button HorizontalAlignment="Center" Content="Add New" Command="{Binding AddNewCommand}" />
         </StackPanel>
-        
     </Border>
 </UserControl>

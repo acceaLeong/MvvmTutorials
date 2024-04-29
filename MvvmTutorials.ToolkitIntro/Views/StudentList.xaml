@@ -12,21 +12,14 @@
         <vm:StudentListVM IsActive="True" />
     </UserControl.DataContext>
     <StackPanel>
-        <ToggleButton HorizontalAlignment="Left"
-                      DockPanel.Dock="Top"
-                      Height="20"
-                      IsChecked="{Binding AllowAddNew}"
-                      Content="Allow Adding" />
+        <StackPanel Orientation="Horizontal">
+            <ToggleButton HorizontalAlignment="Left" DockPanel.Dock="Top" Height="20" IsChecked="{Binding AllowAddNew}" Content="Allow Adding" />
+            <ComboBox ItemsSource="{Binding Langs}" SelectedItem="{Binding LangItem}" Margin="10" />
+        </StackPanel>
         <Label Content="Student Count" />
-        <TextBox Height="20"
-                 IsReadOnly="True"
-                 DockPanel.Dock="Top"
-                 Text="{Binding StudentCount, Mode=OneWay}" />
+        <TextBox Height="20" IsReadOnly="True" DockPanel.Dock="Top" Text="{Binding StudentCount, Mode=OneWay}" />
         <Label Content="Student List" />
-        <ListBox Grid.Row="2"
-                 Height="200"
-                 d:ItemsSource="{x:Null}"
-                 ItemsSource="{Binding Students}">
+        <ListBox Grid.Row="2" Height="200" d:ItemsSource="{x:Null}" ItemsSource="{Binding Students}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock>

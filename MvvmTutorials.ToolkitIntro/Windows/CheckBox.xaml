@@ -33,7 +33,7 @@
             <Button Style="{StaticResource StyleB}" Command="{Binding ButtonClickCommand}" Content="Click Me" />
             <Separator Margin="0,0,0,5" Background="Tomato" />
             <TextBox Style="{StaticResource StyleTB}" Text="{Binding Text1}" IsReadOnly="True" />
-            <CheckBox Style="{StaticResource StyleCB}" Content="Is Running" IsChecked="{Binding ButtonClick1Command.IsRunning,Mode=OneWay}" IsEnabled="False" />
+            <CheckBox Style="{StaticResource StyleCB}" Content="Is Running" IsChecked="{Binding ButtonClick1Command.IsRunning, Mode=OneWay}" IsEnabled="False" />
             <Button Style="{StaticResource StyleB}" Command="{Binding ButtonClick1Command}" Content="Click Me" />
         </StackPanel>
     </Grid>

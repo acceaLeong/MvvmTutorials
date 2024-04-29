@@ -2,13 +2,12 @@
 using System.Data;
 using System.Windows;
 
-namespace MvvmTutorials.ToolkitIntro
+namespace MvvmTutorials.ToolkitIntro;
+
+/// <summary>
+/// Interaction logic for App.xaml
+/// </summary>
+public partial class App : Application
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
-    {
-    }
 
 }

@@ -118,24 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="discount" xml:space="preserve">
-    <value>Discount</value>
+    <value>折扣</value>
   </data>
   <data name="en" xml:space="preserve">
-    <value>English</value>
+    <value>英语</value>
   </data>
   <data name="ja" xml:space="preserve">
-    <value>Japanese</value>
+    <value>日语</value>
   </data>
   <data name="product" xml:space="preserve">
-    <value>Product</value>
+    <value>商品</value>
   </data>
   <data name="String1" xml:space="preserve">
-    <value>String X</value>
+    <value>字符 X</value>
   </data>
   <data name="String2" xml:space="preserve">
-    <value>String Y</value>
+    <value>字符 Y</value>
   </data>
   <data name="String3" xml:space="preserve">
-    <value>String Z</value>
+    <value>字符 Z</value>
   </data>
 </root>

@@ -38,7 +38,7 @@
             <!--SelectedValue ( List<Person> )-->
             <ComboBox Style="{StaticResource StyleCB}" ItemsSource="{Binding Names1}" SelectedValue="{Binding Value1}" SelectedValuePath="Id"  DisplayMemberPath="Name" />
 
-            <TextBox Style="{StaticResource StyleTB}" Text="{Binding Caption,Mode=OneWay}" />
+            <TextBox Style="{StaticResource StyleTB}" Text="{Binding Caption, Mode=OneWay}" />
         </StackPanel>
     </Grid>
 </Window>

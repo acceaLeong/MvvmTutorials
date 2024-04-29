@@ -23,16 +23,5 @@ public partial class MainWindow1 : Window
     public MainWindow1()
     {
         InitializeComponent();
-
-        //LanguageList.ItemsSource = new List<string>
-        //{
-        //    "en-US",
-        //    "ja",
-        //};
     }
-
-    //private void LanguageList_SelectionChanged(object sender, SelectionChangedEventArgs e)
-    //{
-    //    LanguageManager.Instance1.ChangeLanguage(new CultureInfo((sender as ComboBox).SelectedItem.ToString()));
-    //}
 }
