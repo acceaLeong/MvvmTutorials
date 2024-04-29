@@ -19,4 +19,14 @@ public partial class ButtonVM : ObservableObject
     {
         Text = "Goodbye!";
     }
+
+
+    [ObservableProperty]
+    private string _text1 = "1";
+
+    [RelayCommand]
+    private void Button1Click()
+    {
+        Text1 += "1";
+    }
 }

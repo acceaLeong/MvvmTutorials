@@ -138,4 +138,7 @@
   <data name="String3" xml:space="preserve">
     <value>String Z</value>
   </data>
+  <data name="StudentList" xml:space="preserve">
+    <value>Student List</value>
+  </data>
 </root>

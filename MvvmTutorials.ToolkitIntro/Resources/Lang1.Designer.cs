@@ -122,5 +122,14 @@ namespace MvvmTutorials.ToolkitIntro.Resources {
                 return ResourceManager.GetString("String3", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student List.
+        /// </summary>
+        internal static string StudentList {
+            get {
+                return ResourceManager.GetString("StudentList", resourceCulture);
+            }
+        }
     }
 }
