@@ -13,6 +13,21 @@ namespace MvvmTutorials.ToolkitIntro.ViewModels;
 
 public partial class StudentListVM : ObservableRecipient, IRecipient<ValueChangedMessage<Student>>
 {
+    [ObservableProperty]
+    private List<string> _langs = new List<string>()
+    {
+        "en-US",
+        "ja",
+        "zh-CN",
+    };
+
+    [ObservableProperty]
+    private string _langItem = "en-US";
+
+
+
+
+
     public ObservableCollection<Student> Students { get; } = new();
 
     [ObservableProperty]

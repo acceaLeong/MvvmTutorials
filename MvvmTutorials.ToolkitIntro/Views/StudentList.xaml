@@ -17,6 +17,8 @@
             <ComboBox ItemsSource="{Binding Langs}" SelectedItem="{Binding LangItem}" Margin="10" />
         </StackPanel>
         <Label Content="Student Count" />
+        <!--<Label Content="{Binding [StudentList], Source={x:Static vm:LanguageManagerT.InstanceF}}" />-->
+         
         <TextBox Height="20" IsReadOnly="True" DockPanel.Dock="Top" Text="{Binding StudentCount, Mode=OneWay}" />
         <Label Content="Student List" />
         <ListBox Grid.Row="2" Height="200" d:ItemsSource="{x:Null}" ItemsSource="{Binding Students}">
