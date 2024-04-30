@@ -117,28 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="discount" xml:space="preserve">
-    <value>折扣</value>
-  </data>
-  <data name="en" xml:space="preserve">
+  <data name="en-US" xml:space="preserve">
     <value>英语</value>
   </data>
   <data name="ja" xml:space="preserve">
     <value>日语</value>
   </data>
+  <data name="name" xml:space="preserve">
+    <value>姓名</value>
+  </data>
   <data name="product" xml:space="preserve">
     <value>商品</value>
   </data>
-  <data name="String1" xml:space="preserve">
+  <data name="stringX" xml:space="preserve">
     <value>字符 X</value>
   </data>
-  <data name="String2" xml:space="preserve">
+  <data name="stringY" xml:space="preserve">
     <value>字符 Y</value>
   </data>
-  <data name="String3" xml:space="preserve">
+  <data name="stringZ" xml:space="preserve">
     <value>字符 Z</value>
   </data>
-  <data name="StudentList" xml:space="preserve">
+  <data name="studentList" xml:space="preserve">
     <value>学生列表</value>
+  </data>
+  <data name="zh-CN" xml:space="preserve">
+    <value>华语</value>
   </data>
 </root>

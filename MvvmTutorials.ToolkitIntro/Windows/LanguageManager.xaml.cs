@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MvvmTutorials.ToolkitIntro.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,15 +13,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace MvvmTutorials.ToolkitIntro.Views;
+namespace MvvmTutorials.ToolkitIntro.Windows;
 
 /// <summary>
 /// Interaction logic for MainWindow1.xaml
 /// </summary>
-public partial class MainWindow1 : Window
+public partial class LanguageManager : Window
 {
-    public MainWindow1()
+    public LanguageManager()
     {
+        DataContext = new LanguageManagerVM();
+
         InitializeComponent();
     }
 }

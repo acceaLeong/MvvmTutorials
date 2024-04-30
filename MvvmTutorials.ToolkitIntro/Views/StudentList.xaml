@@ -16,8 +16,8 @@
             <ToggleButton HorizontalAlignment="Left" DockPanel.Dock="Top" Height="20" IsChecked="{Binding AllowAddNew}" Content="Allow Adding" />
             <ComboBox ItemsSource="{Binding Langs}" SelectedItem="{Binding LangItem}" Margin="10" />
         </StackPanel>
-        <Label Content="Student Count" />
-        <!--<Label Content="{Binding [StudentList], Source={x:Static vm:LanguageManagerT.InstanceF}}" />-->
+        <!--<Label Content="Student Count" />-->
+        <Label Content="{Binding [StudentList], Source={x:Static vm:StudentListVM.InstanceF}}" />
          
         <TextBox Height="20" IsReadOnly="True" DockPanel.Dock="Top" Text="{Binding StudentCount, Mode=OneWay}" />
         <Label Content="Student List" />

@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MvvmTutorials.ToolkitIntro.Models;
+
+public class Language
+{
+    public string? LangCode { get; set; }
+    public string? Lang { get; set; }
+}

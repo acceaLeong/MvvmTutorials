@@ -33,9 +33,9 @@
                     <i:EventTrigger EventName="GotFocus">
                         <i:InvokeCommandAction Command="{Binding GotFocusCommand}" CommandParameter="1" />
                     </i:EventTrigger>
-                    <i:EventTrigger EventName="LostFocus">
+                    <!--<i:EventTrigger EventName="LostFocus">
                         <i:InvokeCommandAction Command="{Binding LostFocusCommand}" />
-                    </i:EventTrigger>
+                    </i:EventTrigger>-->
                 </i:Interaction.Triggers>
             </TextBox>
             <TextBox Style="{StaticResource StyleTB}" Text="{Binding Text2}" IsReadOnly="True">
@@ -43,9 +43,9 @@
                     <i:EventTrigger EventName="GotFocus">
                         <i:InvokeCommandAction Command="{Binding GotFocusCommand}" CommandParameter="2" />
                     </i:EventTrigger>
-                    <i:EventTrigger EventName="LostFocus">
+                    <!--<i:EventTrigger EventName="LostFocus">
                         <i:InvokeCommandAction Command="{Binding LostFocusCommand}" />
-                    </i:EventTrigger>
+                    </i:EventTrigger>-->
                 </i:Interaction.Triggers>
             </TextBox>
             <Button Style="{StaticResource StyleB}" Command="{Binding Button1ClickCommand}" Content="Click Me" />

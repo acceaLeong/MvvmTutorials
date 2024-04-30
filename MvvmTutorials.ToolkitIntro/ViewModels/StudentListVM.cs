@@ -5,7 +5,9 @@ using MvvmTutorials.ToolkitIntro.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Globalization;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -24,6 +26,34 @@ public partial class StudentListVM : ObservableRecipient, IRecipient<ValueChange
     [ObservableProperty]
     private string _langItem = "en-US";
 
+    partial void OnLangItemChanged(string value)
+    {
+        CultureInfo cultureInfo = new CultureInfo(value);
+        CultureInfo.CurrentCulture = cultureInfo;
+        CultureInfo.CurrentUICulture = cultureInfo;
+
+        InstanceF.OnPropertyChanged("item[]");
+    }
+
+    private static readonly Lazy<StudentListVM> _lazyZ = new Lazy<StudentListVM>(() => new StudentListVM());
+
+    public static StudentListVM InstanceF => _lazyZ.Value;
+
+    private readonly ResourceManager _resourceManagerS;
+
+    public string this[string name]
+    {
+        get
+        {
+            if (name == null)
+            {
+                throw new ArgumentNullException(nameof(name));
+            }
+
+            return _resourceManagerS.GetString(name);
+        }
+    }
+
 
 
 
@@ -37,6 +67,8 @@ public partial class StudentListVM : ObservableRecipient, IRecipient<ValueChange
 
     public StudentListVM()
     {
+        _resourceManagerS = new ResourceManager("MvvmTutorials.ToolkitIntro.Resources.Lang1", typeof(LanguageManagerVM).Assembly);
+
         Students.CollectionChanged += (_, _) => OnPropertyChanged(nameof(StudentCount));
     }
 

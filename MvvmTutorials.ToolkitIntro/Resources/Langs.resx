@@ -117,28 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="discount" xml:space="preserve">
-    <value>割引</value>
-  </data>
-  <data name="en" xml:space="preserve">
-    <value>英語</value>
+  <data name="en-US" xml:space="preserve">
+    <value>English</value>
   </data>
   <data name="ja" xml:space="preserve">
-    <value>日本語</value>
+    <value>Japanese</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Name</value>
   </data>
   <data name="product" xml:space="preserve">
-    <value>商品</value>
+    <value>Product</value>
   </data>
-  <data name="String1" xml:space="preserve">
-    <value>字符 1</value>
+  <data name="stringX" xml:space="preserve">
+    <value>String X</value>
   </data>
-  <data name="String2" xml:space="preserve">
-    <value>字符 2</value>
+  <data name="stringY" xml:space="preserve">
+    <value>String Y</value>
   </data>
-  <data name="String3" xml:space="preserve">
-    <value>字符 3</value>
+  <data name="stringZ" xml:space="preserve">
+    <value>String Z</value>
   </data>
-  <data name="StudentList" xml:space="preserve">
-    <value>生徒リスト</value>
+  <data name="studentList" xml:space="preserve">
+    <value>Student List</value>
+  </data>
+  <data name="zh-CN" xml:space="preserve">
+    <value>Chinese</value>
   </data>
 </root>

@@ -14,7 +14,9 @@
     <Border Padding="10" BorderThickness="1" BorderBrush="LightGray" CornerRadius="5">
         <StackPanel>
             <TextBlock Text="Student Form" FontSize="18" />
-            <Label Content="Name" />
+            <!--<Label Content="Name" />-->
+            <Label Content="{Binding [Name], Source={x:Static vm:StudentListVM.InstanceF}}" />
+            
             <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
             <Label Content="Class" />
             <TextBox Text="{Binding Class, UpdateSourceTrigger=PropertyChanged}" />

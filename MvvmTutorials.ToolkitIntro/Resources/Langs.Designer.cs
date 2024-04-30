@@ -22,14 +22,14 @@ namespace MvvmTutorials.ToolkitIntro.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Lang1 {
+    internal class Langs {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Lang1() {
+        internal Langs() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace MvvmTutorials.ToolkitIntro.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MvvmTutorials.ToolkitIntro.Resources.Lang1", typeof(Lang1).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MvvmTutorials.ToolkitIntro.Resources.Langs", typeof(Langs).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,20 +61,11 @@ namespace MvvmTutorials.ToolkitIntro.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Discount.
-        /// </summary>
-        internal static string discount {
-            get {
-                return ResourceManager.GetString("discount", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to English.
         /// </summary>
-        internal static string en {
+        internal static string en_US {
             get {
-                return ResourceManager.GetString("en", resourceCulture);
+                return ResourceManager.GetString("en-US", resourceCulture);
             }
         }
         
@@ -84,6 +75,15 @@ namespace MvvmTutorials.ToolkitIntro.Resources {
         internal static string ja {
             get {
                 return ResourceManager.GetString("ja", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string name {
+            get {
+                return ResourceManager.GetString("name", resourceCulture);
             }
         }
         
@@ -99,36 +99,45 @@ namespace MvvmTutorials.ToolkitIntro.Resources {
         /// <summary>
         ///   Looks up a localized string similar to String X.
         /// </summary>
-        internal static string String1 {
+        internal static string stringX {
             get {
-                return ResourceManager.GetString("String1", resourceCulture);
+                return ResourceManager.GetString("stringX", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to String Y.
         /// </summary>
-        internal static string String2 {
+        internal static string stringY {
             get {
-                return ResourceManager.GetString("String2", resourceCulture);
+                return ResourceManager.GetString("stringY", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to String Z.
         /// </summary>
-        internal static string String3 {
+        internal static string stringZ {
             get {
-                return ResourceManager.GetString("String3", resourceCulture);
+                return ResourceManager.GetString("stringZ", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Student List.
         /// </summary>
-        internal static string StudentList {
+        internal static string studentList {
             get {
-                return ResourceManager.GetString("StudentList", resourceCulture);
+                return ResourceManager.GetString("studentList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chinese.
+        /// </summary>
+        internal static string zh_CN {
+            get {
+                return ResourceManager.GetString("zh-CN", resourceCulture);
             }
         }
     }
