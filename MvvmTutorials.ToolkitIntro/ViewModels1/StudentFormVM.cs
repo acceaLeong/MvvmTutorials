@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.Input;
 using MvvmTutorials.ToolkitIntro.Models;
 
-namespace MvvmTutorials.ToolkitIntro.ViewModels;
+namespace MvvmTutorials.ToolkitIntro.ViewModels1;
 
 public partial class StudentFormVM : ObservableRecipient, IRecipient<ValueChangedMessage<bool>>
 {

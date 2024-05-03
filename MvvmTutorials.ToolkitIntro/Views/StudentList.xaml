@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MvvmTutorials.ToolkitIntro.Views"
-             xmlns:vm="clr-namespace:MvvmTutorials.ToolkitIntro.ViewModels"
+             xmlns:vm="clr-namespace:MvvmTutorials.ToolkitIntro.ViewModels1"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="250"
              d:Background="#fff">
@@ -17,7 +17,7 @@
             <ComboBox ItemsSource="{Binding Langs}" SelectedItem="{Binding LangItem}" Margin="10" />
         </StackPanel>
         <!--<Label Content="Student Count" />-->
-        <Label Content="{Binding [StudentList], Source={x:Static vm:StudentListVM.InstanceF}}" />
+        <Label Content="{Binding [studentList], Source={x:Static vm:StudentListVM.InstanceF}}" />
          
         <TextBox Height="20" IsReadOnly="True" DockPanel.Dock="Top" Text="{Binding StudentCount, Mode=OneWay}" />
         <Label Content="Student List" />

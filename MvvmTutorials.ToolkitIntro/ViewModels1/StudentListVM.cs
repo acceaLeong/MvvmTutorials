@@ -11,7 +11,7 @@ using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MvvmTutorials.ToolkitIntro.ViewModels;
+namespace MvvmTutorials.ToolkitIntro.ViewModels1;
 
 public partial class StudentListVM : ObservableRecipient, IRecipient<ValueChangedMessage<Student>>
 {
@@ -45,12 +45,12 @@ public partial class StudentListVM : ObservableRecipient, IRecipient<ValueChange
     {
         get
         {
-            if (name == null)
-            {
-                throw new ArgumentNullException(nameof(name));
-            }
+            //if (name == null)
+            //{
+            //    throw new ArgumentNullException(nameof(name));
+            //}
 
-            return _resourceManagerS.GetString(name);
+            return _resourceManagerS.GetString(name) ?? "";
         }
     }
 
@@ -67,7 +67,7 @@ public partial class StudentListVM : ObservableRecipient, IRecipient<ValueChange
 
     public StudentListVM()
     {
-        _resourceManagerS = new ResourceManager("MvvmTutorials.ToolkitIntro.Resources.Lang1", typeof(LanguageManagerVM).Assembly);
+        _resourceManagerS = new ResourceManager("MvvmTutorials.ToolkitIntro.Resources.Languages.Langs", typeof(StudentListVM).Assembly);
 
         Students.CollectionChanged += (_, _) => OnPropertyChanged(nameof(StudentCount));
     }

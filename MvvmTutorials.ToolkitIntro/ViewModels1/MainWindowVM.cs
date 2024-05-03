@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MvvmTutorials.ToolkitIntro.ViewModels;
+namespace MvvmTutorials.ToolkitIntro.ViewModels1;
 
 public partial class MainWindowVM : ObservableRecipient, IRecipient<PropertyChangedMessage<string>>
 {
