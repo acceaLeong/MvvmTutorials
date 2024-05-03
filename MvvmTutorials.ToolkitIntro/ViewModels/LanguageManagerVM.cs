@@ -19,37 +19,42 @@ namespace MvvmTutorials.ToolkitIntro.ViewModels;
 
 public partial class LanguageManagerVM : ObservableObject
 {
+    private List<Language> langs = new List<Language>()
+    {
+        new Language()
+        {
+            Id = 0,
+            ISO = "en-US",
+        },
+        new Language()
+        {
+            Id = 1,
+            ISO = "ja",
+        },
+        new Language()
+        {
+            Id = 2,
+            ISO = "zh-CN",
+        },
+    };
+
+
     [ObservableProperty]
     private int? _langItem;
 
-
-
     partial void OnLangItemChanged(int? value)
     {
-        string langCode;
+        Language lang = langs.Find(item => item.Id == value);
 
-        switch (value)
-        {
-            case 1:
-                langCode = "ja";
-
-                break;
-            case 2:
-                langCode = "zh-CN";
-
-                break;
-            default:
-                langCode = "en-US";
-
-                break;
-        }
-
-        CultureInfo cultureInfo = new CultureInfo(langCode);
+        CultureInfo cultureInfo = new CultureInfo(lang.ISO);
         CultureInfo.CurrentCulture = cultureInfo;
         CultureInfo.CurrentUICulture = cultureInfo;
 
         instanceX.OnPropertyChanged("Item[]");
     }
+
+    [ObservableProperty]
+    private int? _langItem1;
 
     private static readonly Lazy<LanguageManagerVM> lazy = new Lazy<LanguageManagerVM>(() => new LanguageManagerVM());
     //private static readonly LanguageManagerVM vm = new LanguageManagerVM();
@@ -61,9 +66,12 @@ public partial class LanguageManagerVM : ObservableObject
 
     public LanguageManagerVM()
     {
-        resourceManager = new ResourceManager("MvvmTutorials.ToolkitIntro.Resources.Langs", typeof(LanguageManagerVM).Assembly);
+        string langsPath = "MvvmTutorials.ToolkitIntro.Resources.Languages.Langs";
+
+        resourceManager = new ResourceManager(langsPath, typeof(LanguageManagerVM).Assembly);
 
         _langItem = 0;
+        _langItem1 = 0;
     }
 
     public string this[string name]

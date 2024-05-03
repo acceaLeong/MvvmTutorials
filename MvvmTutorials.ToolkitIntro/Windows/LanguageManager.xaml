@@ -42,7 +42,7 @@
                 <ComboBoxItem Content="{Binding [ja], Source={x:Static vm:LanguageManagerVM.instanceX}}" />
                 <ComboBoxItem Content="{Binding [zh-CN], Source={x:Static vm:LanguageManagerVM.instanceX}}" />
             </ComboBox>
-            <ComboBox Style="{StaticResource StyleCB}" SelectedIndex="{Binding LangItem}">
+            <ComboBox Style="{StaticResource StyleCB}" SelectedIndex="{Binding LangItem1}">
                 <ComboBoxItem Content="{Binding [option1], Source={x:Static vm:LanguageManagerVM.instanceX}}" />
                 <ComboBoxItem Content="{Binding [option2], Source={x:Static vm:LanguageManagerVM.instanceX}}" />
                 <ComboBoxItem Content="{Binding [option3], Source={x:Static vm:LanguageManagerVM.instanceX}}" />

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MvvmTutorials.ToolkitIntro.Resources {
+namespace MvvmTutorials.ToolkitIntro.Resources.Languages {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace MvvmTutorials.ToolkitIntro.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MvvmTutorials.ToolkitIntro.Resources.Langs", typeof(Langs).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MvvmTutorials.ToolkitIntro.Resources.Languages.Langs", typeof(Langs).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
