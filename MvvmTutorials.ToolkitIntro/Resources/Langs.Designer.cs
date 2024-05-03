@@ -88,6 +88,33 @@ namespace MvvmTutorials.ToolkitIntro.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Option 1.
+        /// </summary>
+        internal static string option1 {
+            get {
+                return ResourceManager.GetString("option1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Option 2.
+        /// </summary>
+        internal static string option2 {
+            get {
+                return ResourceManager.GetString("option2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Option 3.
+        /// </summary>
+        internal static string option3 {
+            get {
+                return ResourceManager.GetString("option3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Product.
         /// </summary>
         internal static string product {

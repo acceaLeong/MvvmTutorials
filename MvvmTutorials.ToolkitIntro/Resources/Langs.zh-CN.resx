@@ -126,6 +126,15 @@
   <data name="name" xml:space="preserve">
     <value>姓名</value>
   </data>
+  <data name="option1" xml:space="preserve">
+    <value>选择 1</value>
+  </data>
+  <data name="option2" xml:space="preserve">
+    <value>选择 2</value>
+  </data>
+  <data name="option3" xml:space="preserve">
+    <value>选择 3</value>
+  </data>
   <data name="product" xml:space="preserve">
     <value>商品</value>
   </data>

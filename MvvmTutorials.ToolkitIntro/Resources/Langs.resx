@@ -126,6 +126,15 @@
   <data name="name" xml:space="preserve">
     <value>Name</value>
   </data>
+  <data name="option1" xml:space="preserve">
+    <value>Option 1</value>
+  </data>
+  <data name="option2" xml:space="preserve">
+    <value>Option 2</value>
+  </data>
+  <data name="option3" xml:space="preserve">
+    <value>Option 3</value>
+  </data>
   <data name="product" xml:space="preserve">
     <value>Product</value>
   </data>

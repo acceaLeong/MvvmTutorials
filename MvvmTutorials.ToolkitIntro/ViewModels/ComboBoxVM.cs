@@ -11,7 +11,7 @@ namespace MvvmTutorials.ToolkitIntro.ViewModels;
 
 public partial class ComboBoxVM : ObservableObject
 {
-    [ObservableProperty]
+    //[ObservableProperty]
     private List<string> _names = new List<string>()
     {
         "Joe",
@@ -21,7 +21,7 @@ public partial class ComboBoxVM : ObservableObject
         "Larry",
     };
 
-    [ObservableProperty]
+    //[ObservableProperty]
     private List<Person> _names1 = new List<Person>()
     {
         new Person()
