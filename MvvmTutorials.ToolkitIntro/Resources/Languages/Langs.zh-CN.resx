@@ -117,14 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="en-US" xml:space="preserve">
+  <data name="contentText" xml:space="preserve">
+    <value>当前语言: 中文</value>
+  </data>
+  <data name="copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="cut" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="en" xml:space="preserve">
     <value>英语</value>
+  </data>
+  <data name="exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="file" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="internationalization" xml:space="preserve">
+    <value>国际化</value>
   </data>
   <data name="ja" xml:space="preserve">
     <value>日语</value>
   </data>
+  <data name="mainWindow" xml:space="preserve">
+    <value>主窗体</value>
+  </data>
   <data name="name" xml:space="preserve">
     <value>姓名</value>
+  </data>
+  <data name="open" xml:space="preserve">
+    <value>打开</value>
   </data>
   <data name="option1" xml:space="preserve">
     <value>选择 1</value>
@@ -135,8 +165,17 @@
   <data name="option3" xml:space="preserve">
     <value>选择 3</value>
   </data>
+  <data name="paste" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
   <data name="product" xml:space="preserve">
     <value>商品</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="saveAs" xml:space="preserve">
+    <value>另存为</value>
   </data>
   <data name="stringX" xml:space="preserve">
     <value>字符 X</value>
@@ -149,6 +188,9 @@
   </data>
   <data name="studentList" xml:space="preserve">
     <value>学生列表</value>
+  </data>
+  <data name="system" xml:space="preserve">
+    <value>系统</value>
   </data>
   <data name="zh-CN" xml:space="preserve">
     <value>华语</value>

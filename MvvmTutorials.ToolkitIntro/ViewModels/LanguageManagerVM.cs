@@ -17,7 +17,7 @@ public partial class LanguageManagerVM : ObservableObject
         new Language()
         {
             Id = 0,
-            ISO = "en-US",
+            ISO = "en",
         },
         new Language()
         {
@@ -49,13 +49,13 @@ public partial class LanguageManagerVM : ObservableObject
     [ObservableProperty]
     private int? _langItem1;
 
+    private readonly ResourceManager resourceManager;
+
     private static readonly Lazy<LanguageManagerVM> lazy = new Lazy<LanguageManagerVM>(() => new LanguageManagerVM());
     //private static readonly LanguageManagerVM vm = new LanguageManagerVM();
 
     public static LanguageManagerVM instanceX => lazy.Value;
     //public static LanguageManagerVM InstanceX => vm;
-
-    private readonly ResourceManager resourceManager;
 
     public LanguageManagerVM()
     {

@@ -38,7 +38,7 @@
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="200">
             <ComboBox Style="{StaticResource StyleCB}" SelectedIndex="{Binding LangItem}">
-                <ComboBoxItem Content="{Binding [en-US], Source={x:Static vm:LanguageManagerVM.instanceX}}" />
+                <ComboBoxItem Content="{Binding [en], Source={x:Static vm:LanguageManagerVM.instanceX}}" />
                 <ComboBoxItem Content="{Binding [ja], Source={x:Static vm:LanguageManagerVM.instanceX}}" />
                 <ComboBoxItem Content="{Binding [zh-CN], Source={x:Static vm:LanguageManagerVM.instanceX}}" />
             </ComboBox>

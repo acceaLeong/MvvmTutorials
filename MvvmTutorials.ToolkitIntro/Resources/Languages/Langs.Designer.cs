@@ -61,11 +61,83 @@ namespace MvvmTutorials.ToolkitIntro.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Current language: English.
+        /// </summary>
+        internal static string contentText {
+            get {
+                return ResourceManager.GetString("contentText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy.
+        /// </summary>
+        internal static string copy {
+            get {
+                return ResourceManager.GetString("copy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cut.
+        /// </summary>
+        internal static string cut {
+            get {
+                return ResourceManager.GetString("cut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        internal static string delete {
+            get {
+                return ResourceManager.GetString("delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit.
+        /// </summary>
+        internal static string edit {
+            get {
+                return ResourceManager.GetString("edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to English.
         /// </summary>
-        internal static string en_US {
+        internal static string en {
             get {
-                return ResourceManager.GetString("en-US", resourceCulture);
+                return ResourceManager.GetString("en", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exit.
+        /// </summary>
+        internal static string exit {
+            get {
+                return ResourceManager.GetString("exit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File.
+        /// </summary>
+        internal static string file {
+            get {
+                return ResourceManager.GetString("file", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Internationalization.
+        /// </summary>
+        internal static string internationalization {
+            get {
+                return ResourceManager.GetString("internationalization", resourceCulture);
             }
         }
         
@@ -79,11 +151,29 @@ namespace MvvmTutorials.ToolkitIntro.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MainWindow.
+        /// </summary>
+        internal static string mainWindow {
+            get {
+                return ResourceManager.GetString("mainWindow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Name.
         /// </summary>
         internal static string name {
             get {
                 return ResourceManager.GetString("name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open.
+        /// </summary>
+        internal static string open {
+            get {
+                return ResourceManager.GetString("open", resourceCulture);
             }
         }
         
@@ -115,11 +205,38 @@ namespace MvvmTutorials.ToolkitIntro.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Paste.
+        /// </summary>
+        internal static string paste {
+            get {
+                return ResourceManager.GetString("paste", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Product.
         /// </summary>
         internal static string product {
             get {
                 return ResourceManager.GetString("product", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        internal static string save {
+            get {
+                return ResourceManager.GetString("save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save as.
+        /// </summary>
+        internal static string saveAs {
+            get {
+                return ResourceManager.GetString("saveAs", resourceCulture);
             }
         }
         
@@ -156,6 +273,15 @@ namespace MvvmTutorials.ToolkitIntro.Resources.Languages {
         internal static string studentList {
             get {
                 return ResourceManager.GetString("studentList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to System.
+        /// </summary>
+        internal static string system {
+            get {
+                return ResourceManager.GetString("system", resourceCulture);
             }
         }
         
