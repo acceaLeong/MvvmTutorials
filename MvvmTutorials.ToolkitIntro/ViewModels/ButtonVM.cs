@@ -51,6 +51,6 @@ public partial class ButtonVM : ObservableObject
     [RelayCommand]
     private void GotFocus(object obj)
     {
-        selected = Int16.Parse(obj.ToString() ?? "0");
+        selected = Convert.ToInt16(obj.ToString() ?? "0");
     }
 }

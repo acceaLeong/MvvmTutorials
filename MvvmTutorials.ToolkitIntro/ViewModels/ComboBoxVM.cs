@@ -56,7 +56,7 @@ public partial class ComboBoxVM : ObservableObject
 
     partial void OnIndexChanged(int value)
     {
-        Show(value.ToString());
+        Text = value.ToString();
     }
 
     // SelectedItem ( List<string> )
@@ -65,7 +65,7 @@ public partial class ComboBoxVM : ObservableObject
 
     partial void OnItemChanged(string value)
     {
-        Show(value);
+        Text = value;
     }
 
     // SelectedValue ( List<string> )
@@ -74,7 +74,7 @@ public partial class ComboBoxVM : ObservableObject
 
     partial void OnValueChanged(string value)
     {
-        Show(value);
+        Text = value;
     }
 
     // SelectedIndex ( List<Person> )
@@ -83,7 +83,7 @@ public partial class ComboBoxVM : ObservableObject
 
     partial void OnIndex1Changed(int value)
     {
-        Show(value.ToString());
+        Text = value.ToString();
     }
 
     // SelectedItem ( List<Person> )
@@ -92,7 +92,10 @@ public partial class ComboBoxVM : ObservableObject
 
     partial void OnItem1Changed(Person? value)
     {
-        Show(value?.Name ?? "");
+        if (value != null)
+        {
+            Text = value.Name ?? "";
+        } 
     }
 
     // SelectedValue ( List<Person> )
@@ -101,7 +104,7 @@ public partial class ComboBoxVM : ObservableObject
 
     partial void OnValue1Changed(int value)
     {
-        Show(value.ToString());
+        Text = value.ToString();
     }
 
     public ComboBoxVM()
@@ -115,14 +118,8 @@ public partial class ComboBoxVM : ObservableObject
     }
 
     [ObservableProperty]
-    private string text = "";
+    [NotifyPropertyChangedFor(nameof(Caption))]
+    private string _text = "";
     
-    private void Show(string text)
-    {
-        Text = text;
-
-        OnPropertyChanged(nameof(Caption));
-    }
-
     public string Caption => $"Selected: {Text}";
 }

@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:local="clr-namespace:MvvmTutorials.ToolkitIntro.Windows"
         xmlns:vm="clr-namespace:MvvmTutorials.ToolkitIntro.ViewModels"
         mc:Ignorable="d"
@@ -29,24 +28,14 @@
             <Button Style="{StaticResource StyleB}" Command="{Binding ButtonClickCommand}" Content="Click Me" />
             <Separator Margin="0,0,0,5" Background="Tomato" />
             <TextBox Style="{StaticResource StyleTB}" Text="{Binding Text1}" IsReadOnly="True">
-                <i:Interaction.Triggers>
-                    <i:EventTrigger EventName="GotFocus">
-                        <i:InvokeCommandAction Command="{Binding GotFocusCommand}" CommandParameter="1" />
-                    </i:EventTrigger>
-                    <!--<i:EventTrigger EventName="LostFocus">
-                        <i:InvokeCommandAction Command="{Binding LostFocusCommand}" />
-                    </i:EventTrigger>-->
-                </i:Interaction.Triggers>
+                <TextBox.InputBindings>
+                    <MouseBinding Command="{Binding GotFocusCommand}" CommandParameter="1" MouseAction="LeftClick" />
+                </TextBox.InputBindings>
             </TextBox>
             <TextBox Style="{StaticResource StyleTB}" Text="{Binding Text2}" IsReadOnly="True">
-                <i:Interaction.Triggers>
-                    <i:EventTrigger EventName="GotFocus">
-                        <i:InvokeCommandAction Command="{Binding GotFocusCommand}" CommandParameter="2" />
-                    </i:EventTrigger>
-                    <!--<i:EventTrigger EventName="LostFocus">
-                        <i:InvokeCommandAction Command="{Binding LostFocusCommand}" />
-                    </i:EventTrigger>-->
-                </i:Interaction.Triggers>
+                <TextBox.InputBindings>
+                    <MouseBinding Command="{Binding GotFocusCommand}" CommandParameter="2" MouseAction="LeftClick" />
+                </TextBox.InputBindings>
             </TextBox>
             <Button Style="{StaticResource StyleB}" Command="{Binding Button1ClickCommand}" Content="Click Me" />
         </StackPanel>

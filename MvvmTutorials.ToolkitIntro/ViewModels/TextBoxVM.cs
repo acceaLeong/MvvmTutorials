@@ -11,23 +11,15 @@ public partial class TextBoxVM : ObservableObject
 {
     // Without UpdateSourceTrigger=PropertyChanged 
     [ObservableProperty]
+    [NotifyPropertyChangedFor(nameof(Caption))]
     private string _text = "Hello, world!";
-
-    partial void OnTextChanged(string value)
-    {
-        OnPropertyChanged(nameof(Caption));
-    }
 
     public string Caption => $"Caption: {Text}";
 
     // With UpdateSourceTrigger=PropertyChanged
     [ObservableProperty]
+    [NotifyPropertyChangedFor(nameof(Caption1))]
     private string _text1 = "Hello, world!";
-
-    partial void OnText1Changed(string value)
-    {
-        OnPropertyChanged(nameof(Caption1));
-    }
 
     public string Caption1 => $"Caption: {Text1}";
 }
