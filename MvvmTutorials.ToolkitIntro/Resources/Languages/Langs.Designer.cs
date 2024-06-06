@@ -151,7 +151,7 @@ namespace MvvmTutorials.ToolkitIntro.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MainWindow.
+        ///   Looks up a localized string similar to Main Window.
         /// </summary>
         internal static string mainWindow {
             get {

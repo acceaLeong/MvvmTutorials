@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MvvmTutorials.ToolkitIntro.Windows"
         xmlns:vm="clr-namespace:MvvmTutorials.ToolkitIntro.ViewModels"
         mc:Ignorable="d"
-        Title="LanguageManager" Height="450" Width="800">
+        Title="Language Manager" Height="450" Width="800">
     <Window.DataContext>
         <vm:LanguageManagerVM />
     </Window.DataContext>
